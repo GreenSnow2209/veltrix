@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Background subtle rounded container for standalone viewing -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Main primary gradient (Indigo to Violet to Cyan) -->
+    <linearGradient id="v-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="45%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+
+    <!-- Secondary right wing gradient -->
+    <linearGradient id="v-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Inner facet highlight -->
+    <linearGradient id="v-facet" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Dark Container (Optional styling if viewed as icon) -->
+  <rect width="256" height="256" rx="56" fill="url(#bg-grad)" />
+  <rect width="254" height="254" x="1" y="1" rx="55" fill="none" stroke="#334155" stroke-width="2" opacity="0.4" />
+
+  <!-- Ambient Glow behind symbol -->
+  <g filter="url(#glow)" opacity="0.35">
+    <path d="M60 52 L128 204 L196 52 L158 52 L128 132 L98 52 Z" fill="#6366f1" />
+  </g>
+
+  <!-- Left Arm (Dynamic Velocity Blade) -->
+  <path d="M52 48 L128 208 L104 208 L34 62 C31 56 35 48 42 48 Z" 
+        fill="url(#v-primary)" />
+
+  <!-- Right Arm (Sleek Geometric Wing) -->
+  <path d="M204 48 L128 208 L152 208 L222 62 C225 56 221 48 214 48 Z" 
+        fill="url(#v-secondary)" />
+
+  <!-- Central Sharp Facet / Overlapping Velocity Shard -->
+  <path d="M86 48 L128 142 L170 48 L144 48 L128 88 L112 48 Z" 
+        fill="url(#v-facet)" />
+
+  <!-- High-Precision Core Nexus (Center Prism) -->
+  <polygon points="128,142 108,188 128,208 148,188" 
+           fill="#4338ca" opacity="0.85" />
+  <polygon points="128,142 128,208 148,188" 
+           fill="#312e81" opacity="0.6" />
+
+  <!-- Futuristic Matrix Dots Accent -->
+  <circle cx="128" cy="38" r="3" fill="#38bdf8" opacity="0.8" />
+  <circle cx="116" cy="38" r="2" fill="#38bdf8" opacity="0.4" />
+  <circle cx="140" cy="38" r="2" fill="#38bdf8" opacity="0.4" />
+</svg>

@@ -1,7 +1,5 @@
-# Veltrix
-
 <p align="center">
-  <b>Familiar to Build. Modern by Design.</b>
+  <img src="art/banner.png" alt="Veltrix — Familiar to Build. Modern by Design." width="100%">
 </p>
 
 <p align="center">
