@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Route;
+use Veltrix\Facades\Veltrix;
+
+Veltrix::routes();
+
+Route::group([
+    'prefix'        => config('veltrix.route.prefix', config('admin.route.prefix', 'admin')),
+    'namespace'     => config('veltrix.route.namespace', 'App\\Admin\\Controllers'),
+    'middleware'    => config('veltrix.route.middleware', ['web', 'admin']),
+    'as'            => config('veltrix.route.prefix', 'admin') . '.',
+], function (Router $router) {
+
+    $router->get('/', 'HomeController@index')->name('home');
+
+});

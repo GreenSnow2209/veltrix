@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Veltrix - Admin framework for Laravel.
+ * Familiar to Build. Modern by Design.
+ *
+ * Bootstrapper for Veltrix Admin.
+ *
+ * Register custom fields or global callbacks here:
+ * \Veltrix\Facades\Veltrix::css('/custom.css');
+ * \Veltrix\Facades\Veltrix::js('/custom.js');
+ */

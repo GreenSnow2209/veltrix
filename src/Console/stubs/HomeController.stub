@@ -1,0 +1,33 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Http\Controllers\Controller;
+use Veltrix\Controllers\Dashboard;
+use Veltrix\Layout\Column;
+use Veltrix\Layout\Content;
+use Veltrix\Layout\Row;
+
+class HomeController extends Controller
+{
+    public function index(Content $content): Content
+    {
+        return $content
+            ->title('Dashboard')
+            ->description('Overview & System Diagnostics')
+            ->row(Dashboard::title())
+            ->row(function (Row $row) {
+                $row->column(4, function (Column $column) {
+                    $column->append(Dashboard::environment());
+                });
+
+                $row->column(4, function (Column $column) {
+                    $column->append(Dashboard::extensions());
+                });
+
+                $row->column(4, function (Column $column) {
+                    $column->append(Dashboard::dependencies());
+                });
+            });
+    }
+}

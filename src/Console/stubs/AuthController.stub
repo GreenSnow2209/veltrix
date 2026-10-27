@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Veltrix\Controllers\AuthController as BaseAuthController;
+
+class AuthController extends BaseAuthController
+{
+    // Custom authentication behavior can be added here
+}

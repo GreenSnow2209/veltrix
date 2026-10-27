@@ -1,0 +1,47 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyModelNamespace;
+use Veltrix\Controllers\AdminController;
+use Veltrix\Form\Form;
+use Veltrix\Grid\Grid;
+use Veltrix\Show\Show;
+
+class DummyClass extends AdminController
+{
+    protected string $title = 'DummyTitle';
+
+    protected function grid(): Grid
+    {
+        $grid = new Grid(new DummyModel());
+
+        $grid->column('id', 'ID')->sortable();
+        $grid->column('created_at', 'Created at')->sortable();
+        $grid->column('updated_at', 'Updated at')->sortable();
+
+        return $grid;
+    }
+
+    protected function detail(mixed $id): Show
+    {
+        $show = new Show(DummyModel::findOrFail($id));
+
+        $show->field('id', 'ID');
+        $show->field('created_at', 'Created at');
+        $show->field('updated_at', 'Updated at');
+
+        return $show;
+    }
+
+    protected function form(): Form
+    {
+        $form = new Form(new DummyModel());
+
+        $form->display('id', 'ID');
+        $form->display('created_at', 'Created at');
+        $form->display('updated_at', 'Updated at');
+
+        return $form;
+    }
+}
