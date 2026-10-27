@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/veltrix/laravel-admin"><img src="https://img.shields.io/packagist/v/veltrix/laravel-admin.svg?style=flat-square" alt="Latest Version"></a>
-  <a href="https://packagist.org/packages/veltrix/laravel-admin"><img src="https://img.shields.io/packagist/dt/veltrix/laravel-admin.svg?style=flat-square" alt="Total Downloads"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="Software License"></a>
-  <img src="https://img.shields.io/badge/php-%5E8.2%20%7C%20%5E8.3%20%7C%20%5E8.4%20%7C%20%5E8.5-blue?style=flat-square" alt="PHP 8.2-8.5">
-  <img src="https://img.shields.io/badge/laravel-%5E11.0%20%7C%20%5E12.0%20%7C%20%5E13.0-red?style=flat-square" alt="Laravel 11, 12, 13">
+  <img src="https://img.shields.io/badge/version-v1.0.0-6366f1.svg?style=flat-square" alt="Version">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-38bdf8.svg?style=flat-square" alt="Software License"></a>
+  <img src="https://img.shields.io/badge/php-%5E8.2%20%7C%20%5E8.3%20%7C%20%5E8.4%20%7C%20%5E8.5-4f46e5.svg?style=flat-square" alt="PHP 8.2-8.5">
+  <img src="https://img.shields.io/badge/laravel-%5E11.0%20%7C%20%5E12.0%20%7C%20%5E13.0-f43f5e.svg?style=flat-square" alt="Laravel 11, 12, 13">
+  <img src="https://img.shields.io/badge/tests-39%20passed-10b981.svg?style=flat-square" alt="Tests">
 </p>
 
 ---
